@@ -232,3 +232,250 @@ if ( klasesdydis3 >= klasesdydis1) {
 } else {
     console.log('Bandykite kitą kartą.');
 }
+console.log ('________________________Ciklo for panaudojimas_________________________________')
+
+//                                                                          
+// Suskaičiuoti ką gausime susumavus skaičius intervale tarp (imtinai):
+console.log ('___________________0 … 0____________________________________')
+
+let sum = 0
+
+for (let i = 0; i <= 0; i++) {
+    sum += i;
+}
+    console.log('suma = ', sum );
+
+console.log ('___________________0 … 4____________________________________')
+
+let sum1 = 0
+
+for (let i = 0; i <= 4; i++) {
+    sum1 += i;
+}
+    console.log('suma = ', sum1 );
+    
+
+console.log ('___________________0 … 100____________________________________')
+
+let sum2 = 0
+
+for (let i = 0; i <= 100; i++) {
+    sum2 += i;
+}
+  console.log('suma: ',sum2);
+
+
+console.log ('___________________574 … 815____________________________________')
+
+let sum3 = 0
+
+for (let i = 574; i <= 815; i++) {
+    sum3 += i;
+}
+    console.log('suma = ', sum3 );
+
+
+console.log ('___________________-50 … 50____________________________________')
+
+let sum4 = 0
+
+for (let i = -50; i <= 50; i++) {
+    sum4 += i;
+}
+    console.log('suma = ', sum4 );
+
+
+console.log ('___________________-70 … 30____________________________________')
+
+let sum5 = 0
+
+for (let i = -70; i <= 30; i++) {
+    sum5 += i;
+}
+    console.log('suma = ', sum5 );
+
+
+// panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo:
+// pvz.: “abcdef” -> “fedcba”
+
+let abc = 'abcdef';
+let reversed = '';
+
+for (let i = abc.length - 1; i >= 0; i--) {
+  reversed += abc[i];
+}
+console.log(reversed);
+
+console.log('Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:');
+
+// 0 - 11
+
+for (let i = 0; i <= 11; i++) {
+    if (i % 3 === 0) {
+        console.log('Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra '+ i + 'vienetai.');
+    } else if (i % 5 === 0) {
+        console.log('Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra ' + i + 'vienetai.');
+    } else if (i % 7 === 0) {
+        console.log('Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra ' + i + 'vienetai.');
+    }
+}
+
+// 8 - 31
+
+
+// -18 - 18
+
+// rezultatą pateikti tokiu formatu:
+// Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra 4 vienetai.
+// Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra 3 vienetai.
+// Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra 2 vienetai.
+
+
+console.log ('___________________Funkcijos____________________________________')
+
+// Parašyti funkcijas, kurios atitinka pateiktus reikalavimus, jei įvykdo reikiamus testus
+
+// Funkcija pavadinimu “tusciaFunkcija”:
+// nepriima jokių kintamųjų
+// neatlieka jokios vidinės logikos
+// gražina boolean tipo reikšmę “false”
+
+function tusciaFunkcija() {
+    return 'false' ;
+  }
+console.log(tusciaFunkcija());
+
+// TESTAS:
+// console.log( tusciaFunkcija() );
+// rezultatas: false
+
+console.log ('_________________________________________________________');
+
+// Funkcija pavadinimu “daugyba”:
+// priima du skaičiaus tipo kintamuosius
+// atskirame kintamajame įsimena sandaugos reikšmę
+// gražina saudaugos rezultatą
+
+const z = 2
+const x = 4
+let result = daugyba(z, x)
+
+function daugyba(z, x){
+    return z * x;
+}
+
+// TESTAI:
+// console.log( daugyba( skaicius1, skaicius2 ) );
+// console.log( daugyba( skaicius3, skaicius2 ) );
+// console.log( daugyba( skaicius1, skaicius3 ) );
+// rezultatas: teisingos reikšmės;
+
+console.log (daugyba (2, 4));
+console.log (daugyba (5, 4));
+console.log (daugyba (2, 5));
+
+console.log ('_________________________________________________________');
+
+// Funkcija pavadinimu “skaitmenuKiekisSkaiciuje”:
+// priima vieną kintamąjį
+// jei perduotas kintamasis nėra skaičiaus tipo, tai išveda pranešimą “Pateikta netinkamo tipo reikšmė.”
+// priešingu atveju, funkcija tęsia darbą
+// į atskirą kintamąjį įsimena skaičių sudarančių skaitmenų kiekį
+// gražina skaitmenų kiekį
+
+function skaitmenuKiekisSkaiciuje(number) {
+    if (typeof number !== "number") {
+      console.log("Pateikta netinkamo tipo reikšmė.");
+      return;
+    }
+    let count = 0;
+    let numberString = number.toString();
+    for (let i = 0; i < numberString.length; i++) {
+        if (!isNaN(parseInt(numberString[i]))) {
+            count++;
+  }
+}
+return count;
+}
+// TESTAI:
+// console.log( skaitmenuKiekisSkaiciuje( 5 ) );
+// rezultatas: 1
+// console.log( skaitmenuKiekisSkaiciuje( 781 ) );
+// rezultatas: 3
+// console.log( skaitmenuKiekisSkaiciuje( 37060123456 ) );
+// rezultatas: 11
+// console.log( skaitmenuKiekisSkaiciuje( true ) );
+// rezultatas: “Pateikta netinkamo tipo reikšmė.”
+// console.log( skaitmenuKiekisSkaiciuje( “asd” ) );
+// rezultatas: “Pateikta netinkamo tipo reikšmė.”
+// console.log( skaitmenuKiekisSkaiciuje( NaN ) );
+// rezultatas: “Pateikta netinkamo tipo reikšmė.”
+
+// Funkcija pavadinimu “didziausiasSkaiciusSarase”:
+// priima vieną kintamąjį
+// jei perduotas kintamasis nėra sąrašo tipo, tai išveda pranešimą “Pateikta netinkamo tipo reikšmė.”
+// jei sąrašas yra tuščias, tai išveda pranešimą “Pateiktas sąrašas negali būti tuščias.”
+// priešingu atveju, funkcija tęsia darbą
+// pereina per visą pateiktą sąrašą ir į atskirą kintamąjį įsimena skaičių, kuris tuo metu yra didžiausias
+// gražina didžiausią surastą skaičių
+// TESTAI:
+// console.log( didziausiasSkaiciusSarase( [ 1 ] ) );
+// rezultatas: 1
+// console.log( didziausiasSkaiciusSarase( [ 1, 2, 3 ] ) );
+// rezultatas: 3
+// console.log( didziausiasSkaiciusSarase( [ -5, 78, 14, 0, 18 ] ) );
+// rezultatas: 78
+// console.log( didziausiasSkaiciusSarase( [ 69, 69, 69, 69, 66 ] ) );
+// rezultatas: 69
+// console.log( didziausiasSkaiciusSarase( [ -1, -2, -3, -4, -5, -6, -7, -8 ] ) );
+// rezultatas: -1
+// console.log( didziausiasSkaiciusSarase( “pomidoras” ) );
+// rezultatas: “Pateikta netinkamo tipo reikšmė.”
+// console.log( didziausiasSkaiciusSarase( [] ) );
+// rezultatas: “Pateiktas sąrašas negali būti tuščias.”
+
+// Funkcija pavadinimu “isrinktiRaides”:
+// priima du kintamuosius:
+// pirmasis nurodo tekstą, su kuriuo reikės atlikti užduotį
+// antrasis nurodo kas kelintą raidę išrinkti
+// patikrinti, ar pirmasis kintamasis yra teksto tipo:
+// jei ne, išvedame pranešimą “Pirmasis kintamasis yra netinkamo tipo.”
+// priešingu atveju tęsiame darbą
+// patikrinti, ar pirmasis kintamasis yra ne tuščias tekstas ir ne didesnis nei 100 simbolių:
+// jei ne, išvedame pranešimą “Pirmojo kintamojo reikšmė yra netinkamo dydžio.”
+// priešingu atveju tęsiame darbą
+// patikrinti, ar antrasis kintamasis yra skaičiaus tipo:
+// jei ne, išvedame pranešimą “Antrasis kintamasis yra netinkamo tipo.”
+// priešingu atveju tęsiame darbą
+// patikriname, ar antrojo kintamojo vertė yra didesnė už nulį:
+// jei ne, išvedame pranešimą “Antrasis kintamasis turi būti didesnis už nulį.”
+// priešingu atveju tęsiame darbą
+// patikriname, ar antrojo kintamojo vertė yra ne didesnė už pirmojo kintamojo ilgį:
+// jei ne, išvedame pranešimą “Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį.”
+// priešingu atveju tęsiame darbą
+// išrenkame iš nurodyto teksto kas kelintą raidę (pagal antrojo kintamojo žingsnį)
+// išrinktas raides sudėti į atskirą kintamąjį, kuris yra teksto tipo
+// gražina rezultatą
+// TESTAI:
+// console.log( isrinktiRaides( “abcdefg”, 2 ) );
+// rezultatas: “bdf”
+// console.log( isrinktiRaides( “abcdefghijkl”, 3 ) );
+// rezultatas: “cfil”
+// console.log( isrinktiRaides( “abc”, 0 ) );
+// rezultatas: “Antrasis kintamasis turi būti didesnis už nulį.”
+// console.log( isrinktiRaides( “abc”, 4 ) );
+// rezultatas: “Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį.”
+// console.log( isrinktiRaides( 1561, 2 ) );
+// rezultatas: “Pirmasis kintamasis yra netinkamo tipo.”
+
+// Funkcija pavadinimu “dalyba”:
+// turi priimti du kintamuosius
+// reikia sugalvoti ir įgyvendinti kuo daugiau logiškų patikrinimų, kurie padėtų apsaugoti funkciją nuo neteisingo panaudojimo
+// esant blogoms sąlygoms, išvesti atitinkamą pranešimą
+// esant geroms - tęsti darbą
+// į atskirą kintamąjį išsaugoti apskaičiuotą dviejų skaičių dalybos reikšmę
+// daliname pirmąjį skaičių iš antrojo
+// grąžinti suskaičiuotą reikšmę
+// TESTAI:
+// sugalvoti bent 5 testus, kurie bendrai iš esmės patvirtintu gerą funkcijos veikimą
+

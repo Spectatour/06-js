@@ -29,11 +29,11 @@ switch (diena) {
         console.log ('sekmadienis')
         break;
     default:
-        console.log(' Tokios dienos savaiteje nera')
+        console.log('Tokios dienos savaiteje nera')
         break;
 }
 
-const day = 1;
+const day = 8;
 
 switch (day) {
     case 1:
@@ -43,27 +43,38 @@ switch (day) {
     case 5:
         console.log ('darbo diena')
         break;
-    case 6:
-        console.log ('savaitgalis')
-        break;                  
+
+    case 6:                
     case 7:
+        console.log ('savaitgalis')
+        break; 
+       default:
+        console.log('Tokios dienos savaiteje nera')
+        break;
 }
 
-const gamybosEtapas = 3;
+if (day === 1 || day === 2 || day === 3 || day === 4 || day === 5) {
+    console.log('darbo diena');
+} else if (day === 6 || day === 7) {
+    console.log('savaitgalis');
+} else {
+    console.log('tokios dienos savaiteje nera');
+}
+
+
+console.log('-----------------------');
+
+const gamybosEtapas = 4;
 
 switch (gamybosEtapas) {
     case 1:
         console.log('pasiimti puodeli');
-        break;
     case 2:
         console.log('isideti arbatos (pakelis arbatzoles)');
-        break;
     case 3:
         console.log('isideti cuktu/saldikliu/nieko');
-        break;
     case 4:
-        console.log('isipilti vandens');
-        break;   
+        console.log('isipilti vandens');   
     case 5:
         console.log('gerti');
         break;  
@@ -72,44 +83,35 @@ switch (gamybosEtapas) {
         break;
 }
 
+console.log('-----------------------');
 const stotele = 'Parko';
 
 switch (stotele) {
     case 'Parko':
         console.log ( 'Parko stotele')
-        break;
     case 'Geniu':
-        console.log ( 'Parko stotele')
-    break;
+        console.log ( 'Geniu stotele')
     case 'Tremtiniu':
-        console.log ( 'Parko stotele')
-    break;
+        console.log ( 'Tremtiniu stotele')
     case 'Rudens':
-        console.log ( 'Parko stotele')
-    break;
+        console.log ( 'Rudens stotele')
     case 'Karaliaus Mindaugo':
-        console.log ( 'Parko stotele')
-    break;
+        console.log ( 'Karaliaus Mindaugo stotele')
     case 'Zaliasis tiltas':
-        console.log ( 'Parko stotele')
+        console.log ( 'Zaliasis tiltas stotele')
     break;
     case 'Lvovo':
-        console.log ( 'Parko stotele')
-    break;
+        console.log ( 'Lvovo stotele')
     case 'Vasaros':
-        console.log ( 'Parko stotele')
-    break;
+        console.log ( 'Vasaros stotele')
     case 'Rudens2':
-        console.log ( 'Parko stotele')
-    break;
+        console.log ( 'Rudens2 stotele')
     case 'Tremtiniu2':
-        console.log ( 'Parko stotele')
-    break;
+        console.log ( 'Tremtiniu2 stotele')
     case 'Geniu2':
-        console.log ( 'Parko stotele')
-    break;
+        console.log ( 'Geniu2 stotele')
     case 'Ziedas':
-        console.log ( 'Parko stotele')
+        console.log ( 'Naujosios Vilnios ziedas stotele')
     break;
 
     default:
@@ -117,5 +119,3 @@ switch (stotele) {
         break;
 }
 
-
-// PAZIURETI VIDEO DAR KARTA

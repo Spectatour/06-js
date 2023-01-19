@@ -81,3 +81,12 @@ console.log(skirtumas('labasS', 5));    // klaida..
 console.log(skirtumas(5, 'labasS'));    // klaida..
 console.log(skirtumas(8, 'ezys'));   // klaida..
 console.log(skirtumas('ezys', 8));   // klaida..
+
+
+// Mano : 1000
+// Tavo: 1000
+
+// Mano: 50
+
+// Mano: 1000 - -50
+// Tavo: 1000 + -50

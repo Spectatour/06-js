@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "object_uzdavinys": "nodemon ./js/object_uzdavinys.js",
     "object": "nodemon ./js/17-object.js",
     "nthLetter": "nodemon ./js/16-nthLetter.js",
     "biggestNum": "nodemon ./js/15-biggestNum.js",

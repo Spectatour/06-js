@@ -93,7 +93,7 @@ let logika4 = 0;
 let counter = 1;
 
  for (let i = 0; i < pazymiai1.length; i++) {
-    if (counter % 2 === 0) {
+    if (counter % 2 === 0) { // pirmu ciklu, jeigu dalijasi su liekana, bus `-`, jeigu dalijasi be liekanos bus`+` .
       logika4 -= pazymiai1[i];
     } else {
       logika4 += pazymiai1[i];

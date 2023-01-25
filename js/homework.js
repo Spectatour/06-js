@@ -79,25 +79,34 @@ console.log ('_________________________________________________________')
 
 let i = 0;
 
-let logika = pazymiai1[0] - pazymiai1[1] + pazymiai1[2] - pazymiai1[3] + pazymiai1[4];
+let logika1 = pazymiai1[0] - pazymiai1[1] + pazymiai1[2] - pazymiai1[3] + pazymiai1[4];
+console.log (logika1)
 
-/*
-let sum = 0;
+let logika2 = pazymiai2[0] - pazymiai2[1] + pazymiai2[2] - pazymiai2[3] + pazymiai2[4];
+console.log (logika2)
+
+let logika3 = pazymiai3[0] - pazymiai3[1] + pazymiai3[2] - pazymiai3[3] + pazymiai3[4];
+console.log (logika3)
+
+
+let logika4 = 0;
 let counter = 1;
 
  for (let i = 0; i < pazymiai1.length; i++) {
     if (counter % 2 === 0) {
-      sum -= pazymiai1[i];
+      logika4 -= pazymiai1[i];
     } else {
-      sum += pazymiai1[i];
+      logika4 += pazymiai1[i];
     }
     counter++;
   }
-*/
+console.log(logika4)
 
 // Rezultatą išvesti į console
 
-console.log(logika);
+console.log(logika1);
+console.log(logika2);
+console.log(logika3);
 // console.log(sum);
 
 console.log ('_________________________________________________________')

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "arrow": "nodemon ./js/20-arrow.js",
-    "stringMethods": "nodemon ./js/19-arrayMethods.js",
+    "arrayMethods": "nodemon ./js/19-arrayMethods.js",
     "stringMethods": "nodemon ./js/18-stringMethods.js",
     "object_uzdavinys": "nodemon ./js/object_uzdavinys.js",
     "object": "nodemon ./js/17-object.js",

@@ -157,9 +157,51 @@ console.log (`---------------Is it even?----------------------`)
 //   console.log(hero(7,3));
 //   console.log(hero(4,3));
 
+console.log (`---------------SpeedCode #2 - Array Madness----------------------`)
+
+// function arrayMadness(a, b) {
+//     let sumA = 0;
+//     let sumB = 0;
+//     for (let i = 0; i < a.length; i++) {
+//       sumA += a[i] ** 2;
+//     }
+//     for (let i = 0; i < b.length; i++) {
+//       sumB += b[i] ** 3;
+//     }
+//     return sumA > sumB;
+//   }
+//   console.log(arrayMadness([4, 5 ,6 ],[1, 2, 3]));
+
+
+  console.log (`---------------Will you make it?----------------------`)
+
+//   const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+//     if (distanceToPump <= mpg * fuelLeft) {
+//         return true;
+//     } else {
+//     return false;
+//     }
+//   };
+
+//   console.log (zeroFuel(25,25,1));
+
+  console.log (`---------------xxx----------------------`)
 
 
 
+  console.log (`---------------xxx----------------------`)
+
+
+
+  console.log (`---------------xxx----------------------`)
+
+
+
+  console.log (`---------------xxx----------------------`)
+
+
+
+  console.log (`---------------xxx----------------------`)
 
 
 
